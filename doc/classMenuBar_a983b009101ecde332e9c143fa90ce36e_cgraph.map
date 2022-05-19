@@ -1,0 +1,5 @@
+<map id="MenuBar::draw" name="MenuBar::draw">
+<area shape="rect" id="node1" title="draws the menu window on the terminal and also handles pressed keys" alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node2" href="$classMenuBar.html#ab42f42a7ef6cb5a6c291eaca0aea1f0a" title="draws options for each menu item, everytime a designed trigger key is pressed" alt="" coords="164,5,319,32"/>
+<area shape="rect" id="node3" href="$classMenu.html#a190f23fca252b55f1cc3da08e339f99c" title=" " alt="" coords="367,5,501,32"/>
+</map>

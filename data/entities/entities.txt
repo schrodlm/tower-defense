@@ -1,0 +1,28 @@
+BasicTower
+--------------------
+Damage : '3'
+Projectile : '.'
+Display : 'T'
+Seeing_Distance : '10'
+Price : '10'
+====================
+
+FireTower
+--------------------
+Damage : '5'
+Projectile : '*'
+Display : 'T'
+Seeing_Distance : '13'
+Price : '20'
+====================
+
+IceTower
+--------------------
+Damage : '4'
+Projectile : 'o'
+Display : 'I'
+Seeing_Distance : '15'
+Price : '15'
+====================
+
+

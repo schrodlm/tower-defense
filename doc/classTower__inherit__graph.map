@@ -1,0 +1,7 @@
+<map id="Tower" name="Tower">
+<area shape="rect" id="node1" title=" " alt="" coords="131,80,189,107"/>
+<area shape="rect" id="node3" href="$classBasicTower.html" title=" " alt="" coords="5,155,96,181"/>
+<area shape="rect" id="node4" href="$classFireTower.html" title=" " alt="" coords="121,155,199,181"/>
+<area shape="rect" id="node5" href="$classIceTower.html" title=" " alt="" coords="224,155,299,181"/>
+<area shape="rect" id="node2" href="$classEntity.html" title=" " alt="" coords="132,5,188,32"/>
+</map>
