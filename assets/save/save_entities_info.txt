@@ -1,0 +1,14 @@
+tower_type 2
+direction 3
+x 14
+y 5
+
+tower_type 0
+direction 1
+x 20
+y 1
+
+current_point 17
+current_point 12
+current_point 7
+current_point 2

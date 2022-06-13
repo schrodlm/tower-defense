@@ -1,0 +1,11 @@
+GAMEINFO
+--------------------
+created_enemies : '4'
+enemies : '20'
+enemies_alive : '20'
+health : '30'
+level : '1'
+loop : '92'
+money : '20'
+score : '0'
+====================

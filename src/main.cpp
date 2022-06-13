@@ -1,68 +1,82 @@
-#include <iostream>
-#include <ncurses.h>
-#include "menu.h"
-#include "map.h"
-#include "entity.h"
+#include "level.h"
+
+using levelReturn = Level::levelReturn;
+
 int main()
 {
-    //Entity loading --> later will be in its on header, here just for debugging
-    BasicTower tower = BasicTower("data/entities/entities.txt");
-    FireTower tower1 = FireTower("data/entities/entities.txt");
-    IceTower tower2 = IceTower("data/entities/entities.txt");
 
-    //ncurses setup --> later also in its own class Terminal
-    initscr();
-    cbreak();
-    noecho();
-    //no cursor is shown in terminal
-    curs_set(0);
-    keypad(stdscr, TRUE);
+    Terminal term;
 
+    //chcecks if terminal is right size
+    if (!term.right_size())
+	{
+		endwin();
+		fprintf(stderr,"TowerDefense must be run in an 80x25 terminal!\n");
+		return -1;
+	}
 
-
-    // gets information about terminal
-    int max_y, max_x;
-    getmaxyx(stdscr, max_y, max_x);
-
-    // creates a window for menu
-    WINDOW *menu_win = newwin(max_y / 2, max_x / 2, max_y / 4, max_x / 4);
-
-    // creates a menu in window menu
-    MenuBar menu = create_menu(menu_win);
-
-    // draws game menu
-    wrefresh(menu_win);
-    menu.draw('g');
-
-    // moving in the menu
-    int pressed_key;
-    //chosen option from the menu
-    OptionReturns chosen = NO_OPTION_CHOSEN;
-    while (chosen != NEW_GAME_OPTION)
+    //MENU
+    //====================================================
+    OptionReturns option = NO_OPTION_CHOSEN;
+    while (option != NEW_GAME_OPTION && option != LOAD_GAME_OPTION)
     {
-        pressed_key = wgetch(menu_win);
-        int chosen_option = menu.draw(pressed_key);
+        // creates a menu in window
+        MenuBar menu = createMenu(term);
 
-       chosen = menu_handler(chosen_option);
-       
+        // looping menu until option is picked
+        option = menu.menuLoop();
     }
 
-    // clear window menu
-    wclear(menu_win);
-    wrefresh(menu_win);
-  
-    //generates map from a file to a string
-    std::string map_str = read_map("data/maps/map1.txt");
-    //std::string map_str = generate_map("../data/maps/map1.txt");
-    
-    Map map(map_str);
+    // user wants to load a game
+    if (option == LOAD_GAME_OPTION)
+    {
+        Level level_load("assets/save/save_map.txt", 0);
+        level_load.initialization();
+        level_load.loadGame();
+        switch (level_load.levelLoop())
+        {
+        case levelReturn::LEAVE:
+            return 0;
+        case levelReturn::NEXT:
+            break;
+        }
+    }
 
-    //prints out a map
-    map.print_map();
+    //INDIVIDUAL LEVELS
+    //====================================================
     
-   
+    // LEVEL 1
+    Level level1("assets/maps/map1.txt", 1);
+    level1.initialization();
+    switch (level1.levelLoop())
+    {
+    case levelReturn::LEAVE:
+        return 0;
+    case levelReturn::NEXT:
+        break;
+    }
+
+    // LEVEL 2
+    Level level2("assets/maps/map2.txt", 2);
+    level2.initialization();
+    switch (level2.levelLoop())
+    {
+    case levelReturn::LEAVE:
+        return 0;
+    case levelReturn::NEXT:
+        break;
+    }
+
+    // LEVEL 3
+    Level level3("assets/maps/map3.txt", 3);
+    level3.initialization();
+    switch (level3.levelLoop())
+    {
+    case levelReturn::LEAVE:
+        return 0;
+    case levelReturn::NEXT:
+        break;
+    }
 
     getch();
-
-    endwin();
 }

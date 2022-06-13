@@ -1,7 +1,0 @@
-Dobrý den,
-
-veškerá dokumentace je v Doxygenu, můžete se tedy podívat na doc/index.html (ten se vám vygeneruje po spuštení make) nebo na DOCUMENTATION.md, kde mám popsané zadání a implementaci podle zadání na courses. Hlavičkové a zdrojové soubory jsou umístěny ve složce src. Zkopírované zadání z ProgTestu můžete najít v souboru zadani.txt
-
-Děkuji,
-
-Schrödl

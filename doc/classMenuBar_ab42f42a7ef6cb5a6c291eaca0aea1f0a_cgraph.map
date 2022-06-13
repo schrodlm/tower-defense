@@ -1,4 +1,0 @@
-<map id="MenuBar::drawOptions" name="MenuBar::drawOptions">
-<area shape="rect" id="node1" title="draws options for each menu item, everytime a designed trigger key is pressed" alt="" coords="5,5,160,32"/>
-<area shape="rect" id="node2" href="$classMenu.html#a190f23fca252b55f1cc3da08e339f99c" title=" " alt="" coords="208,5,343,32"/>
-</map>

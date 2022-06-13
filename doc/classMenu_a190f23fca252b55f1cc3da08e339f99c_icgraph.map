@@ -1,6 +1,0 @@
-<map id="Menu::GetSelected" name="Menu::GetSelected">
-<area shape="rect" id="node1" title=" " alt="" coords="465,5,600,32"/>
-<area shape="rect" id="node2" href="$classMenuBar.html#ab42f42a7ef6cb5a6c291eaca0aea1f0a" title="draws options for each menu item, everytime a designed trigger key is pressed" alt="" coords="263,5,417,32"/>
-<area shape="rect" id="node3" href="$classMenuBar.html#a983b009101ecde332e9c143fa90ce36e" title="draws the menu window on the terminal and also handles pressed keys" alt="" coords="104,5,215,32"/>
-<area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
-</map>

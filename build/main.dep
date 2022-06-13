@@ -1,1 +1,0 @@
-build/main.o: src/main.cpp src/menu.h src/map.h src/entity.h

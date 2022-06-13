@@ -1,0 +1,36 @@
+BasicTower
+--------------------
+Damage : '3'
+Projectile_display : '.'
+Display : 'B'
+Projectile_frequency : '10'
+Price : '30'
+
+====================
+
+FireTower
+--------------------
+Damage : '5'
+Projectile_display : '*'
+Display : 'F'
+Projectile_frequency : '12'
+Price : '50'
+====================
+
+IceTower
+--------------------
+Damage : '4'
+Projectile_display : '+'
+Display : 'I'
+Projectile_frequency : '10'
+Price : '60'
+====================
+
+GreatTower
+--------------------
+Damage : '6'
+Projectile_display : 'o'
+Display : 'G'
+Projectile_frequency : '12'
+Price : '80'
+====================

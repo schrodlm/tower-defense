@@ -1,6 +1,0 @@
-<map id="create_menu" name="create_menu">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,103,57"/>
-<area shape="rect" id="node2" href="$classMenuBar.html#a01078b55d58fbea2985cdf1d556c4554" title="add Menu item to itself, stores menu items in unique pointers" alt="" coords="161,5,263,32"/>
-<area shape="rect" id="node4" href="$classMenu.html#a3b81d82a4ad8ce20f8dd84bfd45a3e6b" title="adds option to a vector of options" alt="" coords="151,56,273,83"/>
-<area shape="rect" id="node3" href="$classMenu.html#a01394b011ff73ffd15168bbc99fd8b39" title="Getters." alt="" coords="321,5,429,32"/>
-</map>

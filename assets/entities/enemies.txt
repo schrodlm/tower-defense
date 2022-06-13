@@ -1,0 +1,18 @@
+Goblin
+--------------------
+Damage : '20'
+Display : '@'
+Health : '10'
+Score : '10'
+Money : '20'
+====================
+
+
+Dragon
+--------------------
+Damage : '30'
+Display : '&'
+Health : '12'
+Score : '25'
+Money : '25'
+====================
